@@ -1,0 +1,861 @@
+/* App Fonts */
+
+@font-face {
+    font-family: "TTNorms";
+    src: url("../fonts/TTNorms-Regular.otf") format("openType");
+}
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format("openType");
+}
+@font-face {
+    font-family: "TTNorms Light";
+    src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman Italic";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+
+/* Normalize Css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0; /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Start Project */
+.header__link{
+    margin-left: 16rem;
+    text-decoration: none;
+    color: #081d43;
+    background-color: #0050c8;
+    padding: 0.5rem 0.7rem;
+    border-radius: .3rem;
+    /*  زوایا رو به صورت هلالی درست کرد */
+
+}
+.header__icon{
+    font: size 1.8rem;
+    display: none;
+    cursor: pointer;
+    /* نحوه نمایش منو سه خطی را به ما نشان میدهد */
+}
+.header__top{
+    display: flex;
+    color: #081d43;
+    justify-content: space-between;
+ /*فاصله ایجاد میکند contact و  nav بین د */
+    align-items: center;
+/* تراز بندی عمودی انجام میدهد */
+padding: 1.5rem 0 ;
+}
+.nav-logo{
+    margin-right: 2.5rem;
+}
+.nav{
+     /*مشترک ایتم ها و لوگو parent  */
+    display: flex;
+    /* برای کنار هم قرار گرفتن لوگو و ایتم ها استفاده شد */
+    align-items: center;
+    /* برای تراز بندی عناصر به صورت عمودی استفاده شد */
+
+}
+.menuــlink{
+    padding: 0 1rem;
+    /* فاصله از بالا و پایین صفر است */
+    /* برای ایجاد فاصله بین ایتم ها اصتفاده شد */
+    text-decoration: none;
+    color: #081d43;
+    /* امده است استفاده شده است a برای از بین بردن خط زیر ایتم ها که از تگ  */
+ 
+}
+.menu__item{
+    
+
+    
+    
+}
+
+.Menu {
+    
+    list-style: none;
+    /* برای از بین بردن نقطه های کنار ایتم هااستفاده میشود */
+    margin: 0;
+    /*  */
+    padding: 0;
+    /* فاصله ایتم ها از کنار از بین میرود */
+    display: flex;
+    /* یک تگ بلاک است برای از بین بردن بلاک ان و اینلاین کردنش از فلکس استفاده کردیم که باعث شد این ایتم ها کنار هم قرار بگیرندli */
+
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    
+    font-family: "TTNorms";
+}
+
+
+.container {
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+   
+
+   }
+
+/* header__buttom */
+.header__buttom{
+    margin-top: 6.5rem;
+    display: flex;
+
+}
+.header__content{
+    /* margin-left: 20rem; */
+    display: flex;
+    /*  p برای کنار هم قرار گرفتن عکس و تگ */
+    align-items: center;
+    /* هم عکس . هم پاراگراف به صورت عمودی تراز بندی و در وسط  قرار میگیرند  */
+    
+
+
+}
+.header__content__left{ 
+  
+    flex-basis: 50%;
+/*  برای اینکه هر کدام فضای برابری را اشغال کند   */
+/* به صورت کلی برای تعریف عرض و ارتفاع استفاده میشود  */
+margin-right: 11rem;
+} 
+.header__content__right{
+    flex-basis: 50%;
+    /*  برای اینکه هر کدام فضای برابری را اشغال کند   */
+    /* به صورت کلی برای تعریف عرض و ارتفاع استفاده میشود  */
+margin-left: 2rem;
+
+}
+
+.header__content__title{
+color: #081d43;
+font-family: 'TTNRoms medium';
+font-weight: normal;
+line-height: 2.5rem;
+}
+.header__content__text{
+    line-height: 2rem;}
+.header__content__links{
+ display:flex;
+ margin-top: 2rem;
+ 
+    }
+
+.header__content__link{
+    font-size: 20px;
+    text-decoration: none;
+    color: #081d43;
+    background-color: #0050c8;
+    padding: 0.5rem 0.7rem;
+    border-radius: .3rem;
+    /*  زوایا رو به صورت هلالی درست کرد */
+    margin-right: 0.8rem;
+    display: block;
+    width: 10rem;
+    text-align: center;
+}
+
+.header__content__links :nth-child(1){
+    background-color: #87bc25;
+/* از بین عناصر اولین دسته فرزند را انتخاب میکند */
+}
+
+.header__content__wrapper{
+    max-width: 28rem;
+    /* از ماکس استفاده شد برای زمانی که صفحات کوچک و بزرگ میشوند */
+  
+}
+.header__content__img{
+    width: 100%;
+    
+
+}
+
+/* start Main */
+
+.main{
+
+}
+.works{
+    padding: 4rem 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.works__text{
+    text-align: center;
+    font-weight: normal;
+    /* h5 برای از بین بردن بولدی حاصل از   */
+    margin-top: 6.5rem;
+    color: #6c7890;
+
+}
+.works__title{
+    text-align: center;
+    font-weight: 60%;
+    margin-top: .8rem;
+
+
+}
+.work__container{
+    flex-wrap: wrap;
+    /*  هر کدام از دو ایتم در یک کلاس قرار گرفتند  work__container__item   با تعریف یک گلاس به نام  */
+    /* ها در یک راستا قرار میگیرند h تمامی متن ها و   text-align: center;     با  */
+    display: flex;
+    /*    چون کلاس دهی به اندازه کافی انجام نداد بودم از فلکس نمشد استفاذه  کرد*/
+/* columns: 3; */
+/*  برای کناز هم قرار گرفتن پاراگراف ها به صورت ستونی کنار هم */
+/*استفاده نشد   flex   از  */
+text-align: center;
+margin-top: 2.1rem;
+justify-content: space-around;
+}
+.work__
+.work__container__item{
+    flex-shrink: 0;
+    flex-basis: 14rem;
+    
+    margin-bottom: .8rem;
+    
+    
+
+}
+.work__container__text{
+    display: flex;
+    line-height: 2rem;
+    text-align: center;
+    align-items: center;
+    max-width: 16rem;
+    /* استفاده کرد max برای داشتن انعطاف بهتر است از  */
+
+}
+.work__container__title{background-color:#124fff ;
+
+}
+.work__container__text{
+
+}
+.work__container__title{
+
+}
+.work__container__title{
+
+}
+.work__img{
+    text-align: center;
+    margin-top: 3rem;
+
+}
+.work__main_img{
+    
+
+}
+            
+
+
+
+
+
+/* comment section */
+
+
+.persone__comment{
+    background-color: #2f5bea;
+
+ text-align: center;
+ /* margin-bottom: 7rem; */
+ /* padding-bottom: 14rem; */
+ /*  */
+ padding: 4rem 0;
+}
+
+.container{
+
+}
+.persone__comment__main{
+    text-align: center;
+    color: #fff;
+    margin:0  0 2.5rem  0;
+}
+.persone__comment__head{
+    font-family: sans-serif;
+        
+        color: #fff;
+        font-size: 27px;
+        /* padding-top: 3rem; */
+/* margin-bottom: 0.8rem; */
+}
+.persone__comment__head__sub{
+display: unset;
+    /* تمامی مقادیری که از والد میگرد ریسیت میشود  */
+/* برای کم کردن فاصله با کلاس بالایی استفاده شد */
+}
+.comment__container{
+    max-width: 66rem;
+}
+.persone__comment__boxes{
+display: flex;
+line-height: 1.5rem;
+/* margin-left: 9.5rem; */
+margin: 2rem auto;
+max-width: 70rem;
+justify-content: center;
+flex-wrap: wrap;
+/* ریسپانسیوی بهتری انجام میشود flex-wrap با دادن یک کلاس دیگر و  */
+/* به هنگام کوچکتر کردن صفحات نمای بهتری میگیرد */
+
+}
+.persone__comment__box__p{
+    /* margin: 0; */
+    padding: 1.2rem;
+    text-align: left;
+    
+    
+}
+.persone__comment__box{
+    display: flex;
+    background-color: #fff;
+    border-radius: .3rem;
+    /* margin-left: 3rem; */
+
+    /* min-width: 275px; */
+    margin: 1rem;
+    max-width: 320px;
+    min-height: auto;
+    /* flex: basis 25rem;; */
+    flex-direction: column;
+    justify-content: space-between;
+    /* با دادن مقادیر فلکس برای زمانی که یکی از کامنت ها بیشتر است نام و عکس به انتها مچسبند */
+ /* flex-basis: 10rem; */
+ /* ???? */
+    
+}
+
+
+
+.persone__comment__box__title{
+    /* color:#7e8085 ; */
+    /* line-height: 2rem; */
+    /* padding: 1rem .5rem; */
+    margin: 0;
+
+}
+.persone__comment__box__info{
+display:flex;
+padding: .8rem 1.2rem;
+align-items: center;
+border-top: 1px solid #ebebeb;
+/*  که میدادم تمام قسمت بالای عکس و اسم رو پر نمیکرد ولی بعدش درست شد ؟  border-top در ابتدا چون */
+/*   زمانی که  */
+}
+
+.persone__comment__box__info__img{
+
+}
+.persone__comment__box__info__name{
+/* padding-left: .8rem; */
+margin: 0 0 0 .5rem;
+}
+.persone__comment__box{
+
+}
+.persone__comment__box__title{
+
+}
+.persone__comment__box__info{
+    
+
+}
+.persone__comment__box__info__img{
+
+}
+.persone__comment__box__info__name{
+
+}
+
+
+
+.persone__comment__box__info{
+
+}
+.persone__comment__box__info__img{
+
+}
+.persone__comment__box__info__name{
+
+}
+
+.companies{ display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    
+}
+   
+.companies__img{
+    display: block;
+    /* که از اینلاینی خارج شود و بتوانیم مارجین و پدینگ بدیم */
+    
+   padding: .8rem 0;
+
+}
+.companies__img{}
+.companies__img{}
+.companies__img{}
+.companies__img{}
+
+
+
+/* portfilo section */
+.Portfilo__section{
+    text-align:center;
+padding: 4rem 0;
+}
+.container{}
+.Portfilo__section__content{}
+.Portfilo__section__head{
+    /* font-family: sans-serif; */
+    /* font-weight: normal} */}
+.Portfilo__section__h{
+    font-family: sans-serif;
+    font-weight: normal}
+.Portfilo__section__h{}
+
+.Portfilo__section__imges{
+    padding-top: 2.5rem; 
+    /* با پدینگ بالایی ترکیب میشود و حاشیه ها دو برابر مقدار میشود*/
+    /* display: flex; */
+    /* columns: 2 3; */
+     /* flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */ 
+margin-bottom: 2.2rem;
+border-radius: .3rem;
+width: 100%
+;
+}
+.Portfilo__section__img{
+    /* display: block; */
+    margin: 1.2rem;
+    border-radius: 1.2rem;
+    
+}
+
+.Portfilo__section__img{}
+.Portfilo__section__img{}
+
+
+.Portfilo__section__imgess{
+    display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+     align-items: flex-start;
+
+}
+
+
+
+/* footer section */
+
+.footer{
+
+}
+.newsletter{
+
+    background-color: #0050c8;
+    padding: 3rem 0 ;
+    color: #fff;
+}
+
+.newsletter__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.container{
+
+}
+.newsletter__text{
+    font-size: 1.6rem;
+    /* background-color: #fff; */
+    /* flex-basis: 18rem; */
+    border-radius: .3ren
+    m;
+
+}
+.newsletter__email{ 
+    background-color: #fff;
+    display: flex;
+    padding: .2rem .3rem;
+flex-basis: 20rem;
+align-items: center;
+
+justify-content: space-between;
+border-radius: 0.5rem;
+
+}
+.newsletter__txt{
+    /* با دادن مقادیر نان علایمی که مشخص میکرد این دو اینپوت و باتن از هم جدا هستند از میان میرود */
+    border: none;
+    outline: none;
+   
+
+}
+.newsletter__btn{
+    background-color: #2f5bea;
+border: none;
+outline: none;
+padding: 1rem 1.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: .8rem;
+
+/* جهت قرار گیری ایکون در مرکز فلکس میدیم */
+}
+
+.footer__buttom{
+
+}
+   
+
+.copy__right{
+    color: #6c7890;
+    padding: 0 1remS;
+
+}
+.copy__rigt__wrapper{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.copy__right__text{
+
+}
+.copy__right_text{
+
+}
+
+
+
+
+
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .header__link{
+        display: none;
+        /*ناپدید میشود  contact us  زمانی که صفحه کوچیک میشود دکمه  */
+    }
+.header__content{
+    flex-direction: column-reverse;
+}
+
+.header__buttom {
+    margin-top: 2.5rem;
+}
+.persone__comment__boxes{
+    flex-wrap: wrap;
+
+}
+
+.persone__comment__box{
+
+}
+.companies{
+    justify-content: center;
+    /*   در این سایز لوگو شرکت ها بهتر شکسته میشوند*/
+    padding: 0.5rem 0;
+
+}
+.Portfilo__section__imges{
+    display: flex;
+    flex-direction: column;
+}
+.newsletter__wrapper{
+    flex-wrap: wrap;
+}
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .header__icon{
+        display: block;
+        /* در سایز 768پیکسل منو همبرگری نمایش داده میشود */
+    }
+    .Menu{
+        /* display: none; */
+        /* به صورت موقت برداشته شد */
+        /*  در سایز 768پیکسل منو محو میشود */
+    position: fixed;
+    /* یک منو ایجاد کردیم که به گوشه لالا و سمت چپ چسبیده است */
+    top: 0;
+    left: -176px;
+    /* ? */
+    bottom: 0;
+    background-color: blueviolet;
+    width: 11rem;
+    flex-direction: column;
+    padding: 1.2rem .9rem;
+    /* استایل دهی برای مقادیری که در سایز مورد نظر هست اینجا انجام میشود */
+  transition: 0.3 all; 
+  /*مدت زمانی که طول میکشه که منو بیاد و نما یش پیدا کنه   */
+}
+.menu__item{
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+.header__content__right {
+    flex-basis: 50%;
+    margin-left: 0;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    
+}
+.copy__rigt__wrapper{
+    flex-direction: column;
+}
+}
+
+.work__main_img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+       
+        max-width: 100%;
+    }
+    .header__content__left {
+        max-width: 28rem;
+        flex-basis: 50%;
+         margin-right:0 ;}
+         /* برای اینکه از گوشه ها فاصله نپاشته باشد در حالت موبایل هر دو مارجین رو صفر دادم */
+.header__content__wrapper{
+    max-width: 100%;
+}
+.header__content__link{
+    margin-bottom: 1rem;
+}
+.header__content__links{
+    flex-wrap: wrap;
+    /* زمانی که صفحه جمع میشود هر دو به زیر همدیگه میرن */
+    align-items: flex-start;
+    margin-top: 1.5rem;
+}
+}
